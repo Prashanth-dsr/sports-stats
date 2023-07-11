@@ -1,7 +1,8 @@
 import delay from 'delay';
 import PQueue from 'p-queue';
 
-const queue =    new PQueue({concurrency: 1});
+const queue =       
+new PQueue({concurrency: 1});
 
 (async () => {
     await delay(200)    ;
