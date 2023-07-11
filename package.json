@@ -1,0 +1,24 @@
+{
+  "name": "p-queue-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "precommit": "prettier --write ."
+  },
+  "author": "Dasari Prashanth",
+  "license": "ISC",
+  "dependencies": {
+    "delay": "^5.0.0",
+    "got": "^12.6.0",
+    "p-map": "^6.0.0",
+    "p-queue": "^7.3.4",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
