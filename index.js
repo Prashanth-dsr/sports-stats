@@ -1,10 +1,10 @@
 import delay from 'delay';
 import PQueue from 'p-queue';
 
-const queue = new PQueue({concurrency: 1});
+const queue =           new PQueue({concurrency: 1});
 
 (async () => {
-    await delay(200);
+    await delay(200)    ;
     console.log(`8. Pending promises: ${queue.pending}`);
 
     (async () => {
@@ -21,8 +21,9 @@ const queue = new PQueue({concurrency: 1});
 })();
 
 (async () => {
-    await queue.add(() => '🦄');
-    console.log('5. Resolved');
+        await queue.add(() => '🦄');
+
+        console.log('5. Resolved');
 })();
 console.log('1. Added 🦄');
 
