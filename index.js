@@ -5,8 +5,7 @@ const queue = new { concurrency: 1 }();
 
 (async () => {
   await delay(200);
-  console.log(`8. Pending promises: ${queue.pending
-  }`);
+  console.log(`8. Pending promises: ${queue.pending}`);
 
   (async () => {
     await queue.add(() => "🐙");
